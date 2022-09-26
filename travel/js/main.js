@@ -1,5 +1,5 @@
 (function () {
-    const header = document.querySelection('.header');
+    const header = document.querySelector('.header');
     window.onscroll = () => {
         if (window.pageYOffset > 50) {
             header.classList.add('header_active');
@@ -12,9 +12,9 @@
 // Burger handler
 
 (function () {
-    const burgerItem = document.querySelection('.burger');
-    const menu = document.querySelection('.header__nav');
-    const menuCloseItem = document.querySelection('.header__nav-close');
+    const burgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header__nav');
+    const menuCloseItem = document.querySelector('.header__nav-close');
     burgerItem.addEventListener('click', () => {
         menu.classList.add('header__nav_active');
     });
