@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* make sure to set some focus styles for accessibility */
 :focus {
     outline: 0;
@@ -37,20 +38,331 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input[type=search] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct inline-block display not defined in IE 6/7/8/9 and Firefox 3.0
+ */
+
+ audio, 
+ canvas,
+ video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    max-width: 100%;
+ }
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ * Remove excess height in iOS 5 devices.
+ */
+
+ audio:not([controls]) {
+    display: none;
+    height: 0;
+ }
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+ [hidden] {
+    display: none;
+ }
+
+/** 
+ * 1. Correct tect resizing oddly in IE 6/7 when body `font-size` is set
+ *    `em` units
+ * 2. Prevent iOS text size adjuct after orientation change, without disable
+ *    user zoom
+ */
+
+ html {
+    font-size: 100%; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+    -ms-text-size-adjust: 100%; /* 2 */
+ }
+
+ /** 
+ * Correct tect resizing oddly in IE 6/7 when body `font-size` is set
+ */
+
+ a:focus {
+    outline: thin dotted;
+ }
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+ a:active,
+ a:hover {
+    outline: 0;
+ }
+
+ /**
+ * 1. Prevent modern browsers from displaying audio without controls
+ * 2. Prevent iOS text size adjuct after orientation change, without disable
+ */
+
+img {
+    border: 0; /* 1 */
+    -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+figure {
+    margin: 0;
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+form {
+    margin: 0;
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Prevent modern browsers from displaying audio without controls
+ * 2. Prevent modern browsers from displaying audio without controls
+ * 3. Prevent modern browsers from displaying audio without controls
+ */
+
+ legend {
+    border: 0; /* 1 */
+    padding: 0;
+    white-space: normal; /* 2 */
+    *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Prevent modern browsers from displaying audio without controls
+ * 2. Prevent modern browsers from displaying audio without controls
+ *    audio without controls
+ * 3. Prevent modern browsers from displaying audio without controls
+ */
+
+button, 
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+button, 
+input {
+    line-height: normal;
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Prevent modern browsers from displaying audio without controls
+ *    Prevent modern browsers from displaying audio without controls
+ * 2. Prevent modern browsers from displaying audio without controls
+ * 3. Prevent modern browsers from displaying audio without controls
+ *    Prevent modern browsers from displaying audio without controls
+ * 4. Prevent modern browsers from displaying audio without controls
+ *    Prevent modern browsers from displaying audio without controls
+ */
+
+button, 
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+    *overflow: visible; /* 4 */
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+button[disabled], 
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Prevent modern browsers from displaying audio without controls
+ * 2. Prevent modern browsers from displaying audio without controls
+ * 3. Prevent modern browsers from displaying audio without controls
+ *    Prevent modern browsers from displaying audio without controls
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+    *height: 13px; /* 3 */
+    *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Prevent modern browsers from displaying audio without controls
+ * 2. Prevent modern browsers from displaying audio without controls
+ *    Prevent modern browsers from displaying audio without controls
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+} 
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ * Prevent modern browsers from displaying audio without controls
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Prevent modern browsers from displaying audio without controls
+ */
+ 
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbarin IE 6/7/8/9.
+ * 2. Improve readability ang anlignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* lato-regular - latin */
@@ -214,7 +526,7 @@ img {
 
 .intro {
     height: 100vh;
-    background: url(../img/intro-bg.jpg) no-repeat center;
+    background: url(../img/intro-bg-min.jpg) no-repeat center;
     background-size: cover;
     padding-top: 263px;
     padding-bottom: 223px;
@@ -302,18 +614,23 @@ img {
     position: absolute;
     top: 0;
     left: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
     background-color: #fff;
 }
 
 .benefits__cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 55px 1fr 55px 1fr;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 55px;
+    column-gap: 55px;
     padding: 0 100px;
 }
 
 .benefits__card {
+    -ms-grid-column-span: 1;
     grid-column: span 1;
     margin-bottom: 112px;
 }
@@ -388,9 +705,12 @@ img {
 }
 
 .places__cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
 }
 
 .places__card {
@@ -411,7 +731,9 @@ img {
 }
 
 .places__card:hover .places__card-pic {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .places__card-title {
@@ -467,11 +789,19 @@ img {
 }
 
 .tours__tour {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 108px 1fr;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0 108px;
-    align-items: center;
+    column-gap: 108px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 77px;
+}
+
+.tour__info {
+    padding-left: 47px;
 }
 
 .tours__title {
@@ -512,9 +842,12 @@ img {
 }
 
 .top__cards {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 57px;
+    -ms-grid-columns: 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px 1fr 57px;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 57px;
+    row-gap: 57px;
 }
 
 .top__card-pic {
@@ -523,8 +856,14 @@ img {
 }
 
 .top__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-column: span 2;
 }
 
 .top__card-stats {
@@ -661,7 +1000,73 @@ img {
 
 /* Media start */
 
+@media screen and (max-width: 960px) {
+    .benefits {
+        margin-bottom: 75px;
+    }
+    .benefits__card {
+        margin-bottom: 60px;
+    }
+    .search-form__field {
+        margin-bottom: 25px;
+    }
+    .benefits__cards {
+        padding: 0 15px;
+        column-gap: 35px;
+    }
+    .benefits__title {
+        padding: 55px 15px;
+    }
+    .benefits__wrap {
+        -webkit-box-shadow: none;
+                box-shadow: none;
+    }
+
+    .places__card-pic_size_lg {
+        -ms-grid-column-span: span 6;
+        grid-column: span 6;
+    }
+
+    .places__card-pic_size_sm {
+        -ms-grid-column-span: span 6;
+        grid-column: span 6;
+    }
+
+    .tours__tour {
+        column-gap: 35px;
+    }
+    .tour__info {
+        padding-left: 0;
+    }
+    .tours__title {
+        margin-bottom: 15px;
+    }
+    .tours__desc {
+        margin-bottom: 15px;
+    }
+    .top__cards {
+        column-gap: 25px;
+        row-gap: 55px;
+    }
+    .top__card {
+        -ms-grid-column-span: span 3;
+        grid-column: span 3;
+    }
+    .top__card-pic {
+        margin-bottom: 25px;
+    }
+    .footer {
+        padding: 60px 0;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    .section-title {
+        margin-bottom: 25px;
+    }
+    .section-title::after {
+        width: 78px;
+    }
     .header__burger {
         display: block;
     }
@@ -714,6 +1119,103 @@ img {
     .header__nav-close-line:last-child {
         transform: translateY(-50%) rotate(-45deg);
     }
+    .intro {
+        padding-top: 125px;
+    }
+    .intro__title {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .intro__subtitle {
+        font-size: 14px;
+    }
+    .search-form__field {
+        width: 100%;
+        margin-right: 0;
+        padding-bottom: 12px;
+        background: transparent url(../img/svg/oval.svg) no-repeat left 3px;
+    }
+    .search-form__field::placeholder {
+        font-size: 16px;
+    }
+    .search-form__submit {
+        width: 100%;
+    }
+    .benefits {
+        margin-bottom: 36px;
+    }
+    .benefits__card {
+        grid-column: span 3;
+        margin-bottom: 40px;
+    }
+    .benefits__card-pic {
+        margin-bottom: 20px;
+    }
+    .benefits__card-title {
+        margin-bottom: 12px;
+    }
+    .benefits__card-desc {
+        margin-bottom: 20px;
+    }
+    .places {
+        margin-bottom: 76px;
+    }
+    .places__card-pic_size_lg, .places__card-pic_size_sm {
+        height: 230px;
+    }
+    .places__view-all {
+        margin-bottom: 25px;
+    }
+    .places__caption {
+        margin-bottom: 0;
+    }
+    .tours {
+        margin-bottom: 76px;
+    }
+    .tour__pic, .tours__info {
+        grid-column: span 2;
+    }
+    .tour__pic {
+        margin-bottom: 12px;
+    }
+    .tour__pic_mob-first {
+        grid-row-start: -1;
+    }
+    .tours__tour {
+        margin-bottom: 50px;
+    }
+    .top {
+        margin-bottom: 76px;
+    }
+    .top__card {
+        grid-column: span 6;
+    }
+    .top__card-stats {
+        max-width: 386px;
+    }
+    .top__card-desc {
+        margin-bottom: 15px;
+    }
+    .footer__logo {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    .footer__nav {
+        width: 100%;
+    }
+    .footer__menu {
+        width: 50%;
+        margin-bottom: 75px 30px;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    .header__nav {
+        padding: 75px 30px;
+    }
+}
+
+
+
 
 /* Media end */
